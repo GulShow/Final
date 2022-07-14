@@ -1,0 +1,48 @@
+@media (max-width: 1600px) {
+  .personalities__description {
+    max-width: 860px; }
+  .personalities__img {
+    display: none; }
+  .personalities .col-3 {
+    width: calc(100% / 3);
+    background-image: url("../../../assets/personalities-2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .personalities .col-9 {
+    width: calc(100% - calc(100% / 3)); }
+  .personalities .carousel-indicators {
+    top: 390px; } }
+@media (max-width: 1200px) {
+  .personalities .carousel-indicators {
+    top: 440px; } }
+@media (max-width: 1024px) {
+  .personalities .col-3 {
+    width: 50%; }
+  .personalities .col-9 {
+    width: 50%; }
+  .personalities .carousel-indicators {
+    top: 540px; } }
+@media (max-width: 992px) {
+  .personalities .carousel-indicators {
+    top: 700px; } }
+@media (max-width: 768px) {
+  .personalities .col-3 {
+    width: 100%;
+    height: 500px; }
+  .personalities .col-9 {
+    width: 100%; }
+  .personalities .carousel-indicators {
+    top: 1000px; } }
+@media (max-width: 575px) {
+  .personalities__description {
+    font-size: 30px; }
+  .personalities #carouselExampleIndicators {
+    max-width: 315px; }
+  .personalities .container {
+    display: flex;
+    justify-content: center; }
+  .personalities .carousel-indicators {
+    top: 1220px; } }
+
+/*# sourceMappingURL=personalities-media.css.map */

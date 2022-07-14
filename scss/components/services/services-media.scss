@@ -1,0 +1,19 @@
+.services {
+  @media (max-width: 1024px) {
+    & {
+      padding-top: 240px;
+    }
+  }
+  $media-services: 768px;
+  @media (max-width: $media-services) {
+    .col-4 {
+      width: 50%
+    }
+  }
+  $media-services2: 375px;
+  @media (max-width: $media-services2) {
+    .col-4 {
+      width: 100%;
+    }
+  }
+}

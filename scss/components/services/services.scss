@@ -1,0 +1,44 @@
+.services {
+  padding-top: 100px;
+  &__p {
+    color: $text-color;
+    font-weight: $font-bold;
+    font-size: $font-s;
+    text-transform: uppercase;
+    &:hover {
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(to right, #F0145A, #EF8080);
+    }
+  }
+
+  &__i {
+    color: $text-color;
+    font-weight: $font-bold;
+    &:hover {
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(to right, #F0145A, #EF8080);
+    }
+  }
+
+  &__heading {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #F0145A, #EF8080);
+    font-size: $font-lg;
+    font-weight: $font-bold;
+  }
+  &__headings {
+    color: $text-color;
+    font-weight: $font-bold;
+    font-size: $font-higherMd;
+    padding: 30px 0 15px 0;
+  }
+  &__paragraphs {
+    color: white;
+  }
+  .col-4 {
+    padding-top: 60px;
+  }
+}

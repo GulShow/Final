@@ -1,0 +1,63 @@
+.personalities {
+  padding-top: 80px;
+  &__p {
+    color: $text-color;
+    font-weight: $font-bold;
+    font-size: $font-s;
+    text-transform: uppercase;
+    margin: 0;
+    &:hover {
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(to right, #F0145A, #EF8080);
+    }
+  }
+  &__i {
+    color: $text-color;
+    font-weight: $font-bold;
+    &:hover {
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(to right, #F0145A, #EF8080);
+    }
+  }
+  &__description {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #F0145A, #EF8080);
+    font-weight: $font-bold;
+    font-size: $font-lg;
+    line-height: 46px;
+    margin: 0;
+  }
+  &__p2 {
+    color: #B3B3BA;
+    font-weight: $font-bold;
+  }
+  &__p3 {
+    color: #B3B3BA;
+    font-size: $font-s;
+  }
+  &__Ps {
+    padding-top: 30px;
+  }
+  &__img {
+    max-height: 300px;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 16px;
+    height: 16px;
+    background-color: #24A3FF;
+    border-radius: 50%;
+  }
+  .carousel-indicators {
+    position: absolute;
+    top: 320px;
+    gap: 12px;
+  }
+  .col-9 {
+    padding-left: 30px;
+  }
+
+
+}

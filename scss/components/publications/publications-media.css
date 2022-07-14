@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+  .publications .col-4 {
+    width: 50%; } }
+@media (max-width: 375px) {
+  .publications .col-4 {
+    width: 100%; } }
+
+/*# sourceMappingURL=publications-media.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,yBAAmC;EAE/B,qBAAM;IACF,MAAM,EAAE,KAAK",
+"sources": ["penalty-media.scss"],
+"names": [],
+"file": "penalty-media.css"
+}

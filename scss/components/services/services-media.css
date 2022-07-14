@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+  .services {
+    padding-top: 240px; } }
+@media (max-width: 768px) {
+  .services .col-4 {
+    width: 50%; } }
+@media (max-width: 375px) {
+  .services .col-4 {
+    width: 100%; } }
+
+/*# sourceMappingURL=services-media.css.map */

@@ -1,0 +1,13 @@
+@media (max-width: 1440px) {
+  .sponsors .container {
+    max-width: 100%; } }
+@media (max-width: 768px) {
+  .sponsors .col-3 {
+    width: calc(100% / 3); } }
+@media (max-width: 375px) {
+  .sponsors .col-3 {
+    width: 100%; }
+  .sponsors .noneLast {
+    display: none; } }
+
+/*# sourceMappingURL=sponsors-media.css.map */

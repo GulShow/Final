@@ -1,0 +1,41 @@
+.team-person {
+  &__own {
+  $team-person-media: 768px;
+  @media (max-width: $team-person-media) {
+    display: block !important;
+    &-img img {
+      max-width: 300px;
+      float: left;
+      padding-right: 30px;
+    }
+    &-info-name {
+      padding-top: 100px;
+    }
+    &-info-p1 {
+      border-top: 4px solid $border-color;
+      padding-top: 30px;
+    }
+    &-info-contacts {
+      flex-direction: column;
+      gap: 10px;
+      padding-bottom: 100px;
+      border: 0;
+      & > div:not(:last-child):after {
+        display: none;
+      }
+    }
+  }
+    $team-person-media2: 375px;
+    @media(max-width: $team-person-media2) {
+      &-img img {
+        float: none;
+      }
+      &-info-name {
+        padding-top: 30px;
+      }
+      &-info-contacts {
+      padding-bottom: 30px;
+      }
+    }
+}
+}

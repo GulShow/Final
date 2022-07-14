@@ -1,0 +1,14 @@
+.publications {
+  $publications-media: 768px;
+  @media(max-width: $publications-media) {
+  .col-4 {
+    width: 50%;
+  }
+  }
+  $publications-media2: 375px;
+  @media (max-width: $publications-media2) {
+    .col-4 {
+      width: 100%;
+    }
+  }
+}

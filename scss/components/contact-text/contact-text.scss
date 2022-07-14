@@ -1,0 +1,39 @@
+.contact-text {
+  padding-top: 60px;
+  &_address {
+    border-bottom: 4px solid $border-color;
+    padding-bottom: 30px;
+    a {
+      font-size: $font-higherMd;
+      color: $main-color
+    }
+  }
+  &_phone-email {
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 0;
+    border-bottom: 4px solid $border-color;
+    a {
+      font-size: $font-higherMd;
+    }
+    &-main {
+      color: $main-color;
+    }
+  }
+  &_img {
+    padding-top: 30px;
+    &-fc{
+      color: $accent-color
+    }
+&-p {
+  line-height: 16px;
+  font-size: $font-s;
+  color: $text-color;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  padding-left: 10px;
+
+}
+
+  }
+}

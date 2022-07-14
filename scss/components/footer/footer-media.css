@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+  .footer {
+    height: 306px; }
+  .footer__top-nav {
+    display: block !important; }
+  .footer__top-content, .footer__bottom-content {
+    flex-direction: column;
+    gap: 10px; }
+  .footer__bottom {
+    padding-top: 30px; }
+    .footer__bottom-img {
+      display: flex;
+      justify-content: center; }
+    .footer__bottom-tel {
+      justify-content: center; }
+    .footer__bottom-email {
+      justify-content: center; }
+    .footer__bottom-content > div:not(:last-child) {
+      margin-right: 6px; }
+      .footer__bottom-content > div:not(:last-child):after {
+        display: none; }
+  .footer__top {
+    position: relative; }
+    .footer__top-address {
+      justify-content: center; }
+    .footer__top-onMap {
+      justify-content: center; }
+    .footer__top-nav > div:not(:last-child) {
+      margin-right: 6px; }
+      .footer__top-nav > div:not(:last-child):after {
+        display: none; }
+    .footer__top-onMap {
+      padding-top: 10px; }
+    .footer__top-p {
+      position: absolute;
+      top: 220px;
+      display: flex;
+      justify-content: center; } }
+
+/*# sourceMappingURL=footer-media.css.map */

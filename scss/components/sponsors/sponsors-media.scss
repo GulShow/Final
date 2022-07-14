@@ -1,0 +1,23 @@
+.sponsors {
+$sponsors-media: 1440px;
+  @media (max-width: $sponsors-media) {
+    .container {
+      max-width: 100%;
+    }
+  }
+  $sponsors-media2: 768px;
+  @media (max-width: $sponsors-media2) {
+    .col-3 {
+      width: calc(100% / 3)
+    }
+  }
+  $sponsors-media3: 375px;
+  @media (max-width: $sponsors-media3) {
+    .col-3 {
+      width: 100%;
+    }
+    .noneLast {
+      display: none;
+    }
+  }
+}

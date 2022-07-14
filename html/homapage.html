@@ -10,112 +10,510 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/homepage.css">
 </head>
 <body>
-
 <header class="header">
+    <div class="header-content-wrapper">
+        <div class="header__top">
+            <div class="container-lg">
+                <div class="header__top-content d-flex align-items-center">
 
-    <div class="header__top">
+                    <div class="header__top-lang">
+
+                        <label>
+                            <input name="lang" value="УК" type="radio">
+                            <span>УК</span>
+                        </label>
+
+                        <label>
+                            <input name="lang" value="PL" type="radio">
+                            <span>PL</span>
+                        </label>
+
+                        <label>
+                            <input checked name="lang" value="EN" type="radio">
+                            <span>EN</span>
+                        </label>
+                    </div>
+
+                    <div class="header__top-address">
+                        <a target="_blank"
+                           href="https://www.google.com.ua/maps/place/Pyam'yatnyk+Zhertvam+Teroryzmu,+%D0%9F%D0%BE%D0%B1%D0%BB%D0%B8%D0%B7%D1%83+%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D1%97+%D0%BC%D0%B5%D1%82%D1%80%D0%BE+%D0%9A%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+01023/@50.4368635,30.529918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf00d4d55dad:0x40f274cb5d991e55!8m2!3d50.4368601!4d30.5321067?hl=ru">Kyiv,
+                            Mechnikova str, 14/1
+                        </a>
+                    </div>
+
+                    <div class="header__top-phone">
+                        <a href="tel:0800211927">
+                            0800 211 927
+                        </a>
+                    </div>
+
+                    <div class="header__top-social">
+                        <a target="_blank" href="https://facebook.com/">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_42019_2766)">
+                                    <path
+                                        d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z"
+                                        fill="white"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_42019_2766">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-md">
+            <div class="container-lg">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/logo.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <!--  <span class="navbar-toggler-icon"></span>-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">team</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">publications</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="bg-gradient">
+        <section class="banner">
+            <div class="container">
+                <h1>you legal solutions provider</h1>
+            </div>
+            <a href="#ancor" class="banner__scroll">
+                <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle opacity="0.5" cx="21" cy="21" r="20" stroke="white" stroke-width="2"/>
+                    <path d="M12 18L21 27L30 18" stroke="white" stroke-width="2"/>
+                </svg>
+            </a>
+        </section>
+        <section class="tab">
+            <div class="container">
+                <div class=" tab__main d-flex align-items-start">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="nav flex-column nav-pills me-3 align-items-end tab__column" id="v-pills-tab" role="tablist"
+                                 aria-orientation="vertical">
+                                <button class="nav-link active tab__link" id="v-pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home"
+                                        aria-selected="true">Consistent
+                                </button>
+                                <button class="nav-link tab__link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">Customer oriented
+                                </button>
+                                <button class="nav-link tab__link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages" aria-selected="false">Innovative
+                                </button>
+                                <button class="nav-link tab__link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-settings" type="button" role="tab"
+                                        aria-controls="v-pills-settings" aria-selected="false">Business oriented
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="tab-content d-flex flex-column justify-content-center" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                     aria-labelledby="v-pills-home-tab">
+                                    <div class="tab__body">
+                                        <h2 class="tab__body-heading">We turn the idea of legal services</h2>
+                                        <p class="tab__body-p">Consolidating many years of experience and practice, the
+                                            company's lawyers
+                                            accompany complex projects and achieve a number of important decisions for
+                                            the
+                                            industry.
+                                            Many of them form the practice of applying the law of the sea in
+                                            Ukraine.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                     aria-labelledby="v-pills-profile-tab">
+                                    <div class="tab__body">
+                                        <h2 class="tab__body-heading">We turn the idea of legal services</h2>
+                                        <p class="tab__body-p">Consolidating many years of experience and practice, the
+                                            company's lawyers
+                                            accompany complex projects and achieve a number of important decisions for
+                                            the
+                                            industry.
+                                            Many of them form the practice of applying the law of the sea in
+                                            Ukraine.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                     aria-labelledby="v-pills-messages-tab">
+                                    <div class="tab__body">
+                                        <h2 class="tab__body-heading">We turn the idea of legal services</h2>
+                                        <p class="tab__body-p">Consolidating many years of experience and practice, the
+                                            company's lawyers
+                                            accompany complex projects and achieve a number of important decisions for
+                                            the
+                                            industry.
+                                            Many of them form the practice of applying the law of the sea in
+                                            Ukraine.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                     aria-labelledby="v-pills-settings-tab">
+                                    <div class="tab__body">
+                                        <h2 class="tab__body-heading">We turn the idea of legal services</h2>
+                                        <p class="tab__body-p">Consolidating many years of experience and practice, the
+                                            company's lawyers
+                                            accompany complex projects and achieve a number of important decisions for
+                                            the
+                                            industry.
+                                            Many of them form the practice of applying the law of the sea in
+                                            Ukraine.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container-lg">
+                <a class="services__p">services <i class="bi bi-chevron-right services__i"></i></a>
+
+                <h2 class="services__heading">What can we do better than others?</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="../assets/services-1.svg" alt="services photo">
+                        <h2 class="services__headings">IT and e-commerce</h2>
+                        <p class="services__paragraphs">An endless stream of contracts, tax issues, labor relations,
+                            corporate papers - legal work distracts you from doing business. But there is not much work
+                            to
+                            do to hire an in-house lawyer.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="../assets/services-2.svg" alt="services photo">
+                        <h2 class="services__headings">Comprehensive daily
+                            legal support</h2>
+                        <p class="services__paragraphs">In addition, over time, the work will become the same type and
+                            uninteresting for a full-time lawyer. And we know very well how difficult it is to find a
+                            good
+                            candidate with experience in the field of information technology in Ukraine.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="../assets/services-3.svg" alt="services photo">
+                        <h2 class="services__headings">Structuring corporate relationships</h2>
+                        <p class="services__paragraphs">Instead of just providing legal services, we will hire a lawyer
+                            or a
+                            whole team that will fit into the daily life of your company.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="../assets/services-4.svg" alt="services photo">
+                        <h2 class="services__headings">Building contractual relations</h2>
+                        <p class="services__paragraphs">Once a week, or week after month, you have your own lawyer by
+                            your
+                            side. Anyone in the company can catch it at the coffee maker and just talk about current
+                            affairs
+                            instead of waiting for update status.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="../assets/services-5.svg" alt="services photo">
+                        <h2 class="services__headings">Protection of business, intellectual property</h2>
+                        <p class="services__paragraphs">And all the other time he will work on new diverse projects, so
+                            he
+                            will definitely not stop in professional development. One way or another, all Axon Partners
+                            will
+                            work for you instead of a corporate lawyer.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="../assets/services-6.svg" alt="services photo">
+                        <h2 class="services__headings">Judicial representation</h2>
+                        <p class="services__paragraphs">Is it a small, medium-sized company or a market leader? Local
+                            business or multinational company? Do you have your own legal department or not?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="personalities">
         <div class="container">
-            <div class="header__top-content d-flex align-items-center justify-content-end">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="personalities__img" src="../assets/personalities-1.svg" alt="Person Photo">
+                            </div>
+                            <div class="col-9">
+                                <div class="personalities__Ps">
+                                    <p class="personalities__p">Команда <i
+                                        class="bi bi-chevron-right personalities__i"></i></p>
+                                    <p class="personalities__description">
+                                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну
+                                        допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                    </p>
+                                </div>
+                                <div class="personalities__Ps">
+                                    <p class="personalities__p2">Олександр Олександровський</p>
+                                    <p class="personalities__p3">Керуючий партнер</p>
+                                </div>
 
-                <div class="header__top-lang">
+                            </div>
+                        </div>
 
-                    <label>
-                        <input name="lang" value="УК" type="radio">
-                        <span>УК</span>
-                    </label>
 
-                    <label>
-                        <input name="lang" value="PL" type="radio">
-                        <span>PL</span>
-                    </label>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="personalities__img" src="../assets/personalities-1.svg" alt="Person Photo">
+                            </div>
+                            <div class="col-9">
+                                <div class="personalities__Ps">
+                                    <p class="personalities__p">Команда <i
+                                        class="bi bi-chevron-right personalities__i"></i></p>
+                                    <p class="personalities__description">
+                                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну
+                                        допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                    </p>
+                                </div>
+                                <div class="personalities__Ps">
+                                    <p class="personalities__p2">Олександр Олександровський</p>
+                                    <p class="personalities__p3">Керуючий партнер</p>
+                                </div>
 
-                    <label>
-                        <input checked name="lang" value="EN" type="radio">
-                        <span>EN</span>
-                    </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="personalities__img" src="../assets/personalities-1.svg" alt="Person Photo">
+                            </div>
+                            <div class="col-9">
+                                <div class="personalities__Ps">
+                                    <p class="personalities__p">Команда <i
+                                        class="bi bi-chevron-right personalities__i"></i></p>
+                                    <p class="personalities__description">
+                                        Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну
+                                        допомогу, навіть у ситуаціях, коли більшість безсилі.
+                                    </p>
+                                </div>
+                                <div class="personalities__Ps">
+                                    <p class="personalities__p2">Олександр Олександровський</p>
+                                    <p class="personalities__p3">Керуючий партнер</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sponsors">
+        <div class="container">
+            <p class="sponsors__p">
+                They already trust us
+            </p>
+            <div class="row">
+                <div class="col-3">
+                    <img src="../assets/hillel-1.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3">
+                    <img src="../assets/wana-2.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3">
+                    <img src="../assets/tap-3.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3">
+                    <img src="../assets/3d-4.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3">
+                    <img src="../assets/orange-5.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3">
+                    <img src="../assets/adt-6.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3 noneLast">
+                    <img src="../assets/click-7.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3 noneLast">
+                    <img src="../assets/eco-8.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3 noneLast">
+                    <img src="../assets/infra-9.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3 noneLast">
+                    <img src="../assets/city-10.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3 noneLast">
+                    <img src="../assets/art-11.svg" alt="Sponsors Photo">
+                </div>
+                <div class="col-3 noneLast">
+                    <img src="../assets/ulti-12.svg" alt="Sponsors Photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <p class="news__p">Publications <i class="bi bi-chevron-right news__i"></i></p>
+
+            <h2 class="news__description">We have something to tell</h2>
+            <div class="news__cards">
+                <div class="row">
+                    <div class="col-4 first-card">
+                        <div class="card news__cards-1">
+                            <div class="card-img">
+                                <img src="../assets/news_card1.svg" class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Equity associate</h5>
+                                <p class="card-date">April 22</p>
+                                <hr class="card-hr">
+                                <p class="card-text">I'm a jun on projects. I am a co-owner of a law firm. How it
+                                    happened. Before entering my parents told me that if I…</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card news__cards-2">
+                            <div class="card-img">
+                                <img src="../assets/news_card2.svg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Penalty for the Good Corporation: what will happen to Google and
+                                    others for violating the GDPR</h5>
+                                <p class="card-date">September 29</p>
+                                <hr class="card-hr">
+                                <p class="card-text">And why the recovery of 50 million euros could be a fateful
+                                    precedent According to Mind.ua January 21 National Commission for Data
+                                    Protection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 main-card">
+                        <div class="card news__cards-3">
+                            <div class="card-img">
+                                <img src="../assets/news_card3.svg" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Millennial Testament</h5>
+                                <p class="card-date">August 19</p>
+                                <hr class="card-hr">
+                                <p class="card-text">What and how modern vloggers, opinion leaders and
+                                    crypto-millionaires will inherit A typical legacy of the Ukrainian generation X
+                                    looks like this: an apartment in…</p>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
-                <div class="header__top-address">
-                    <a target="_blank"
-                       href="https://www.google.com.ua/maps/place/Pyam'yatnyk+Zhertvam+Teroryzmu,+%D0%9F%D0%BE%D0%B1%D0%BB%D0%B8%D0%B7%D1%83+%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D1%97+%D0%BC%D0%B5%D1%82%D1%80%D0%BE+%D0%9A%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+01023/@50.4368635,30.529918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf00d4d55dad:0x40f274cb5d991e55!8m2!3d50.4368601!4d30.5321067?hl=ru">Kyiv,
-                        Mechnikova str, 14/1
-                    </a>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__top-content d-flex">
+                <div class="footer__top-nav d-flex">
+                    <div class="footer__top-address d-flex align-items-center">
+                        <a target="_blank"
+                           href="https://www.google.com.ua/maps/place/Pyam'yatnyk+Zhertvam+Teroryzmu,+%D0%9F%D0%BE%D0%B1%D0%BB%D0%B8%D0%B7%D1%83+%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D1%97+%D0%BC%D0%B5%D1%82%D1%80%D0%BE+%D0%9A%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+01023/@50.4368635,30.529918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf00d4d55dad:0x40f274cb5d991e55!8m2!3d50.4368601!4d30.5321067?hl=ru">Kyiv,
+                            Mechnikova str, 14/1
+                        </a>
+                    </div>
+                    <div class="footer__top-onMap d-flex align-items-center">
+                        <a target="_blank" class="footer__top-a"
+                           href="https://www.google.com.ua/maps/place/Pyam'yatnyk+Zhertvam+Teroryzmu,+%D0%9F%D0%BE%D0%B1%D0%BB%D0%B8%D0%B7%D1%83+%D1%81%D1%82%D0%B0%D0%BD%D1%86%D1%96%D1%97+%D0%BC%D0%B5%D1%82%D1%80%D0%BE+%D0%9A%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B0,+%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%9C%D0%B5%D1%87%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+14%2F1,+%D0%9A%D0%B8%D1%97%D0%B2,+01023/@50.4368635,30.529918,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf00d4d55dad:0x40f274cb5d991e55!8m2!3d50.4368601!4d30.5321067?hl=ru">
+                            on map
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer__top-copyrights d-flex align-items-center">
+                    <p class="footer__top-p">© 2021 HLEGAL Law company, LLC</p>
                 </div>
 
-                <div class="header__top-phone">
-                    <a href="tel:0800211927">
+            </div>
+        </div>
+
+    </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <div class="footer__bottom-content d-flex">
+                <div class="footer__bottom-img">
+                    <img src="../assets/footer_facebook.png" alt="Facebook">
+                </div>
+                <div class="footer__bottom-tel d-flex align-items-center">
+                    <a href="tel:0800 211 927">
                         0800 211 927
                     </a>
                 </div>
-
-                <div class="header__top-social">
-                    <a target="_blank" href="https://facebook.com/">
-                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_42019_2766)">
-                                <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="white"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_42019_2766">
-                                    <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
+                <div class="footer__bottom-email d-flex align-items-center">
+                    <a href="mailto:contact@forstudy.space">
+                        contact@forstudy.space
                     </a>
                 </div>
-
             </div>
         </div>
     </div>
-
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                           data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-</header>
-
-
+</footer>
 <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

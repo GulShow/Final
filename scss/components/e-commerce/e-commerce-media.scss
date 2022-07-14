@@ -1,0 +1,15 @@
+.e-commerce {
+  @media (max-width: 1024px) {
+    & {
+      padding-top: 220px;
+    }
+  }
+  $e-commerce-media: 375px;
+  @media (max-width: $e-commerce-media) {
+    &__secondBlock {
+      .col-6 {
+        width: 100%
+      }
+    }
+  }
+}

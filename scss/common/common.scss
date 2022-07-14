@@ -4,9 +4,89 @@ body {
   font-weight: $font-normal;
 }
 
+.bg-gradient {
+  position: relative;
+  border-bottom-left-radius: $default-border-radius;
+  border-bottom-right-radius: $default-border-radius;
+
+
+  &:before, &:after{
+    content: '';
+    display: block;
+    border-radius: 0 0 $default-border-radius $default-border-radius;
+    position: absolute;
+    height: $gradient-shadow-height;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:before {
+    bottom: -10px;
+    background-color: #CACADB;
+    width: calc(100% - 20px) ;
+  }
+
+  &:after {
+    bottom: -20px;
+    background-color: #E7E7F2;
+    width: calc(100% - 40px);
+  }
+
+
+}
 
 @media (min-width: 1600px) {
   .container {
     max-width: 1600px;
   }
+}
+
+.form-control {
+  border: none;
+  &::placeholder {
+    color: #B3B3BA;
+    font-family: $main-font;
+    font-weight: $font-normal;
+    font-size: $font-sm;
+  }
+}
+
+#carouselExampleIndicators {
+  background-color:#F5F5FA;
+  position: relative;
+}
+
+.card-title {
+  font-weight: $font-bold;
+  font-size: $font-sm;
+  color: $text-color;
+}
+.card-body {
+  max-width: 468px;
+  margin: 0 auto;
+}
+.card-text {
+  font-size: $font-s;
+}
+.card-date {
+  padding-top: 15px;
+  color: $date-color;
+  text-transform: uppercase;
+  font-size: $font-s;
+  font-weight: $font-bold;
+
+}
+
+.card-hr {
+  color: $border-color;
+  border-width: 4px;
+}
+
+.card-img {
+  max-height: 200px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }

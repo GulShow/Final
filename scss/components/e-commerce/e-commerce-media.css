@@ -1,0 +1,8 @@
+@media (max-width: 1024px) {
+  .e-commerce {
+    padding-top: 220px; } }
+@media (max-width: 375px) {
+  .e-commerce__secondBlock .col-6 {
+    width: 100%; } }
+
+/*# sourceMappingURL=e-commerce-media.css.map */

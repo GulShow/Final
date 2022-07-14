@@ -1,0 +1,88 @@
+.penalty {
+&__article {
+  &-img {
+    width: 100%;
+    height: 500px;
+  }
+  &-description {
+    font-size: $font-mid;
+    color: $main-color;
+    font-weight: $font-bold;
+    padding-top: 30px;
+  }
+  &-date {
+    color: $date-color;
+    text-transform: uppercase;
+    font-size: $font-s;
+    font-weight: $font-bold;
+    border-bottom: 4px solid $border-color;
+    padding-bottom: 30px;
+  }
+  &-p {
+    padding-top: 30px;
+  }
+}
+  &__attention {
+    &-heading {
+      color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(to right, #F0145A, #EF8080);
+      font-weight: $font-bold;
+      font-size: $font-lg;
+      line-height: 46px;
+      margin: 0;
+      padding-top: 30px;
+    }
+    &-description {
+      color: $main-color;
+      font-weight: $font-bold;
+      font-size: $font-higherMd;
+      &:not(:first-child) {
+        padding-top: 30px;
+      }
+    }
+    &-option {
+      color: $accent-color;
+      span {
+        color: black;
+      }
+      &:not(:first-child) {
+        padding-top: 15px;
+    }
+    }
+    &-img {
+      padding-top: 30px;
+      flex-direction: column;
+      img {
+        width: 640px;
+        height: 398px;
+      }
+
+      &-description {
+        color: $date-color;
+        font-size: $font-s;
+      }
+    }
+    &-p {
+      padding-top: 30px;
+      &:last-child {
+        border-bottom: 4px solid $border-color;
+        padding-bottom: 30px;
+      }
+    }
+
+  }
+  &__logos {
+    padding: 30px 0 60px 0;
+    gap: 10px;
+    &-bg {
+      width: 42px;
+      height: 42px;
+      background-color: #F5F5FA;
+      border-radius: 12px;
+      &:hover {
+        background-color: #EDEDF7;
+      }
+    }
+  }
+}

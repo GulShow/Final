@@ -1,0 +1,41 @@
+.tab {
+  $tab-media: 768px;
+  @media(max-width: $tab-media) {
+    &__column {
+      flex-direction: row !important;
+      overflow-x: scroll;
+      border-right: 0;
+      border-bottom: 4px solid $border-color;
+      align-items: center !important;
+      margin: 0;
+      padding: 0 0 60px 0;
+    }
+    &__link {
+      font-size: 30px;
+    }
+    .row {
+      flex-direction: column;
+    }
+    .col-4 , .col-8 {
+      width: 100%
+    }
+    .nav-link.active {
+      padding-top: 30px;
+    }
+    button {
+      width: 25%;
+    }
+    &-content {
+      padding-top: 60px;
+    }
+  }
+$tab-media2: 375px;
+  @media (max-width: $tab-media2) {
+    &-content {
+      padding-top: 30px;
+    }
+    &__column {
+      padding-bottom: 30px;
+    }
+  }
+}

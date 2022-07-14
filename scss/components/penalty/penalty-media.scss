@@ -1,0 +1,12 @@
+.penalty {
+  $penalty-media: 767px;
+  @media (max-width: $penalty-media) {
+    &__article {
+      &-img {
+          height: 300px
+
+      }
+    }
+  }
+
+}

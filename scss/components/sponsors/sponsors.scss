@@ -1,0 +1,19 @@
+.sponsors {
+  padding: 110px 0 60px 0;
+&__p {
+  text-align: center;
+  font-size: $font-s;
+  color: $main-color;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+  img {
+    width: 100%;
+  }
+  .col-3 {
+    padding: 0;
+  }
+  .row {
+    border-radius: 12px;
+  }
+}
