@@ -1,0 +1,36 @@
+.team {
+  &__text {
+    color: transparent !important;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #F0145A, #EF8080);
+    font-size: $font-lg;
+    font-weight: $font-bold;
+    text-align: center;
+  }
+  &__card-img1 , &__card-img2 , &__card-img3 ,
+  &__card-img4 , &__card-img5 , &__card-img6{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 400px;
+    border-radius: 12px;
+  }
+  &__card-img1 {
+    background-image: url("/assets/Team-1.svg");
+  }
+  &__card-img2 {
+    background-image: url("/assets/Team-2.svg");
+  }
+  &__card-img3 {
+    background-image: url("/assets/Team-3.svg");
+  }
+  &__card-img4 {
+    background-image: url("/assets/Team-4.svg");
+  }
+  &__card-img5 {
+    background-image: url("/assets/Team-5.svg");
+  }
+  &__card-img6 {
+    background-image: url("/assets/Team-6.svg");
+  }
+}

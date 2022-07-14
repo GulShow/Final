@@ -23,11 +23,23 @@
       padding-top: 30px;
     }
     button {
-      width: 25%;
+      width: 100%;
     }
     &-content {
       padding-top: 60px;
     }
+    .wrapper {
+      overflow: hidden;
+    }
+    .scroll {
+      overflow: scroll;
+      width: 100%;
+      margin-bottom: -20px;
+    }
+    nav {
+      overflow-x: unset;
+    }
+
   }
 $tab-media2: 375px;
   @media (max-width: $tab-media2) {

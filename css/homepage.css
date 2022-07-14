@@ -271,9 +271,17 @@ a {
   .tab .nav-link.active {
     padding-top: 30px; }
   .tab button {
-    width: 25%; }
+    width: 100%; }
   .tab-content {
-    padding-top: 60px; } }
+    padding-top: 60px; }
+  .tab .wrapper {
+    overflow: hidden; }
+  .tab .scroll {
+    overflow: scroll;
+    width: 100%;
+    margin-bottom: -20px; }
+  .tab nav {
+    overflow-x: unset; } }
 @media (max-width: 375px) {
   .tab-content {
     padding-top: 30px; }
