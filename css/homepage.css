@@ -256,7 +256,6 @@ a {
 @media (max-width: 768px) {
   .tab__column {
     flex-direction: row !important;
-    overflow-x: scroll;
     border-right: 0;
     border-bottom: 4px solid #E6E6F0;
     align-items: center !important;
