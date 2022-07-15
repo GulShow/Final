@@ -1,0 +1,56 @@
+.intro {
+  padding-bottom: 60px;
+  &__content {
+    &-text {
+      padding-right: 30px;
+      &-heading {
+        font-weight: $font-bold;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, #F0145A, #EF8080);
+        font-size: $font-lg;
+        padding-bottom: 30px;
+      }
+      &-heading2 {
+        font-weight: $font-bold;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right, #F0145A, #EF8080);
+        font-size: $font-lg;
+        max-width: 362px;
+      }
+      &-p {
+        max-width: 942px;
+        font-size: $font-md;
+      }
+    }
+    &-numbers {
+      padding-left: 30px;
+      border-left: 4px solid $border-color;
+      &-option {
+        &:not(:first-child) {
+          padding-top: 30px;
+        }
+        &-number {
+          font-weight: $font-bold;
+          font-size: $font-xxl;
+          color: transparent;
+          -webkit-background-clip: text;
+          background-image: linear-gradient(to right, #F0145A, #EF8080);
+          padding-left: 13px;
+        }
+      }
+
+    }
+  }
+  &__mainPhoto {
+    margin: 60px 0;
+  }
+  &__photo {
+    width: 100vw;
+    min-width: 100vw
+  }
+  &__content2 {
+    gap: 60px;
+  }
+}

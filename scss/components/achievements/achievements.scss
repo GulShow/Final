@@ -1,0 +1,47 @@
+.achievements {
+  background-color: #F5F5FA;
+
+  &__body {
+    gap: 40px;
+
+    &-block {
+      width: 370px;
+      background-color: $white-color;
+      height: 110px;
+      min-width: 132px;
+    }
+  }
+
+  &__heading {
+    font-weight: $font-bold;
+    font-size: $font-s;
+    color: $main-color;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0;
+  }
+&__hidden {
+  display: none;
+}
+  .carousel-indicators [data-bs-target] {
+    width: 16px;
+    height: 16px;
+    background-color: #24A3FF;
+    border-radius: 50%;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    top: 130px;
+    gap: 12px;
+  }
+
+  #carouselExampleIndicators {
+    border-bottom: 2px solid $border-color;
+    padding-bottom: 70px;
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    display: none;
+  }
+}

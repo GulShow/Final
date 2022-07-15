@@ -1,0 +1,23 @@
+.achievements {
+  $achievements-media: 992px;
+  @media (max-width: $achievements-media) {
+    &__body {
+      &-block:not(:first-child) {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  $achievements-media2: 375px;
+  @media (max-width: $achievements-media2) {
+    &__hidden {
+      display: block;
+    }
+    &__body {
+      &-block:not(:first-child) {
+        display: none !important;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 .team {
+  padding: 60px 0;
   &__text {
     color: transparent !important;
     -webkit-background-clip: text;
@@ -6,6 +7,7 @@
     font-size: $font-lg;
     font-weight: $font-bold;
     text-align: center;
+    padding-bottom: 60px;
   }
   &__card-img1 , &__card-img2 , &__card-img3 ,
   &__card-img4 , &__card-img5 , &__card-img6{
@@ -32,5 +34,39 @@
   }
   &__card-img6 {
     background-image: url("/assets/Team-6.svg");
+  }
+  &__card-text-heading {
+    font-weight: $font-bold;
+    color: $main-color;
+    font-size: $font-sm;
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  &__card-text-p {
+    font-size: $font-s;
+    color: #B3B3BA;
+  }
+  &__card-icon {
+    &-a {
+      display: flex;
+      width: 32px;
+      height: 32px;
+      background-color: #B3B3BA;
+      border-radius: 50%;
+      align-items: center;
+      justify-content: center;
+      color: #24A3FF;
+      &:hover {
+        color: $accent-color
+      }
+    }
+  }
+  .row {
+    gap: 60px;
+    justify-content: center;
+  }
+  &__card-wrapper {
+    padding-top: 15px;
   }
 }

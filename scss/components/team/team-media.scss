@@ -1,0 +1,9 @@
+.team {
+  $media-team: 576px;
+  @media (max-width: $media-team) {
+    .col-xs {
+      width: 100%;
+      padding: 0 30px;
+    }
+  }
+}
